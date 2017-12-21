@@ -1,4 +1,3 @@
-
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -10,13 +9,15 @@ h1{
   body {
       color: #F6D155;
       background-color: #c72;
-    	background-image: url("http://www.htmldog.com/examples/images/bg.gif");;
-			font-size: 20px;
+      background-image: url("http://www.htmldog.com/examples/images/bg.gif");;
+    	font-size: 20px;
       font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
 			margin: 0;
   }
       #photo{
         padding-bottom: 80;
+        width:50%;
+        height:300;
   }
       object{
         padding-top: 80
@@ -26,21 +27,84 @@ h1{
 	font-size: 60px;
 	font-style: normal;
 
+
       }
       h2{
         font-family: Papyrus, fantasy;
   font-size: 55;
       }
+      .container {
+    position: relative;
+    width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+#trolley{
+  position:absolute;
+  left:450;
+  bottom:1
+}
+.klug{
+  padding-top: 60px;
+
+  
+  
 
   
    
 </style>
  
-<h1 align="center"><marquee>The Trolley Problem</marquee></h1>
+<h1 align="center"><marquee behavior="alternate">The Trolley Problem</marquee></h1>
 <h4 align="center"> By Andrew Miller-Klugman </h4>
-<img id="photo" src="http://www.galvestontx.gov/ImageRepository/Document?documentID=5738" width="50%"/><img id="photo" src="http://www.suntrolley.com/wp-content/uploads/2017/01/banner-img.png"width="50%" height="300" >
+
 </head> 
 <body>
+<div class="container">
+  <img src="http://www.galvestontx.gov/ImageRepository/Document?documentID=5738" alt="Avatar" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text"><a href="http://www.galvestontx.gov/ImageRepository/Document?documentID=5738">http://www.galvestontx.gov/ImageRepository/Document?documentID=5738</a></div>
+  </div>
+  </div>
+  <div class="container">
+  <img id="trolley"src="http://www.suntrolley.com/wp-content/uploads/2017/01/banner-img.png" alt="Avatar" class="image" style="width:100%" >
+  <div class="middle">
+    <div class="text"><a href="http://www.suntrolley.com/wp-content/uploads/2017/01/banner-img.png">http://www.suntrolley.com/wp-content/uploads/2017/01/banner-img</a></div>
+  </div>
+</div>
+ 
+
 <h3 align="center"> <marquee>The Problem</marquee></h3>
 <table style="border-color: grey;" border="10">
 <thead>
@@ -87,7 +151,7 @@ Would it be morally permissible for you to operate anyway?
 </object>
 </hr>
 <div><h2 align="center"> Facts About the Trolley Problem</h2></div>
-<ul>
+<ul id="list">
 <li><center> The Original Trolley Problem was created by  Philippa Foot
   <li> Studied as an ethical dilemma by people all over the world
     <li><a href="https://en.wikipedia.org/wiki/Consequentialism">A question of human morality, and an example of a philosophical view called consequentialism </a>
@@ -95,7 +159,14 @@ Would it be morally permissible for you to operate anyway?
         <li>The most common solution to the problem is the <em><a href="https://en.wikipedia.org/wiki/Utilitarianism">Utilitarian</a></em> view of killing one person to save five
           <li>Many people believe there is no right answer to the dilema
             <li>The other most popular approach is the <a href="https://www.nwabr.org/sites/default/files/Principles.pdf"><em>do-no-harm</em></a> approach
-              <li>about 90% of people chose to kill the one and save the five
-                <li>
-                  <li>
-                  </center>
+              <li>About 90% of people chose to kill the one and save the five
+                <li>Many people also believe the Trolley problem is such a radical scenario that it really is a pointless issue
+                  <li>There has never been and most likely never will be a universally agreed upon answer to the Trolley Problem
+                 </center></ul>
+                 <h2 class="klug" align=center> My Opinion</h2>
+                 <p align=center> Now before I start this is 100% my opinion, without anyones else's ideas or views. And with that being said, I believe that there is no right answer to the Trolley Problem. In either scenario, the person who is making the choice will be responsible for the death of at least one person. Now I understand the whole killing one to save five idea, the idea of doing something for the "greater good" but, I also understand why someone would not want to get involved and let nature take its course instead of trying to play god. Either way someone dies and the person will feel guilty because they will inevitably be killing another human being. Every person has a slightly different view on a issue like this and therefore there cannot and will not ever be a right answer.  </p>
+                 <h2 class="klug" align=center>One Final Point</h2>
+                 <p align=center> Allow me to leave you with one final point to ponder. Just think have you ever heard of any scenario similar to the Trolley problem occuring in real life? I believe this problem is so outdated that is should just be 86'd all together. I challenge you to come up with a better ethical dilemma than the outdated Trolley Problem and send it to me at not-a-real-email@not-gmail.com </p>
+<h4 align=center><a href="https://docs.google.com/a/mail.medfield.k12.ma.us/document/d/1BUh2E5aFL1VWAQk-ZJgILkAh4PKbYN8Fw7prQGq_WtA/edit?usp=sharing"> Sources</a></h4>
+</body>
+</html>
